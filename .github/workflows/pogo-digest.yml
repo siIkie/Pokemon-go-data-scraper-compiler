@@ -31,13 +31,13 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Compute date range (since training → today)
+      - name: Compute date range (full history → today)
         id: dates
         run: |
           echo "START=2024-06-01" >> $GITHUB_OUTPUT
           echo "END=$(date -u +%F)" >> $GITHUB_OUTPUT
 
-      - name: Build library (full range)
+      - name: Build library (FULL RANGE)
         run: |
           python build_pogo_library.py \
             --start "${{ steps.dates.outputs.START }}" \
@@ -67,7 +67,6 @@ jobs:
           mkdir -p outputs/latest
           cp POGO_Digest.xlsx outputs/latest/POGO_Digest.xlsx
           cp POGO_Events.ics outputs/latest/POGO_Events.ics
-          # Optional: quick summary file
           echo "# Latest POGO Digest" > outputs/latest/README.md
           echo "- Built on: ${{ steps.dates.outputs.END }}" >> outputs/latest/README.md
           echo "- Range: ${{ steps.dates.outputs.START }} → ${{ steps.dates.outputs.END }}" >> outputs/latest/README.md
