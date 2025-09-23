@@ -37,95 +37,22 @@ jobs:
           echo "START=2024-06-01" >> $GITHUB_OUTPUT
           echo "END=$(date -u +%F)" >> $GITHUB_OUTPUT
 
-      # 🔒 Restore cached library (so we keep previously-saved HTML files)
       - name: Restore pogo_library cache
         id: cache-lib
-        uses: actions/cache@v4
+        uses: actions/cache/restore@v4
         with:
           path: pogo_library
           key: pogolib-${{ steps.dates.outputs.END }}
           restore-keys: |
             pogolib-
 
-      # 🩹 Patch builder to skip re-fetching files that already exist
-      - name: Patch build_pogo_library.py to skip existing files
-        run: |
-          python - << 'PY'
-          import io, re, os, sys
-          p = "build_pogo_library.py"
-          s = open(p, "r", encoding="utf-8").read()
-
-          # Only patch if not already patched
-          if "SKIP-EXISTING-PATCH" not in s:
-              # Replace save_posts() function body with a version that checks for existing files
-              pattern = r"def save_posts\\(posts, target_dir\\):[\\s\\S]*?return saved"
-              repl = '''
-def save_posts(posts, target_dir):
-    # SKIP-EXISTING-PATCH: if the output file already exists, do not fetch again
-    saved = []
-    import os
-    from datetime import datetime
-    def safe_slug(text, maxlen=120):
-        import re
-        t = re.sub(r"\\s+", "-", (text or "").strip().lower())
-        t = re.sub(r"[^a-z0-9\\-]+", "", t)
-        return t[:maxlen] or "untitled"
-    for p in posts:
-        url = p.get("url")
-        if not url:
-            continue
-        d = p.get("date") or datetime.utcnow().date().isoformat()
-        slug = safe_slug(p.get("title") or url)
-        fn = f"{d}_{slug}.html"
-        path = os.path.join(target_dir, fn)
-        # If already saved, skip fetching to save time/bandwidth
-        if os.path.exists(path) and os.path.getsize(path) > 0:
-            p["file"] = fn
-            try:
-                import hashlib
-                html = open(path, "r", encoding="utf-8", errors="ignore").read()
-                p["sha256"] = hashlib.sha256(html.encode("utf-8", errors="ignore")).hexdigest()
-            except Exception:
-                pass
-            saved.append(p)
-            continue
-        # Otherwise fetch and save
-        try:
-            html = fetch(url)
-        except Exception:
-            continue
-        with open(path, "w", encoding="utf-8", errors="ignore") as f:
-            f.write(html)
-        p["file"] = fn
-        try:
-            import hashlib
-            p["sha256"] = hashlib.sha256(html.encode("utf-8", errors="ignore")).hexdigest()
-        except Exception:
-            pass
-        saved.append(p)
-    return saved
-'''.lstrip()
-              s2, n = re.subn(pattern, repl, s, flags=re.M)
-              if n == 0:
-                  print("WARNING: save_posts() not patched (signature not found). Proceeding anyway.")
-                  s2 = s
-              else:
-                  print("Patched save_posts() to skip existing files.")
-              with open(p, "w", encoding="utf-8") as f:
-                  f.write(s2)
-          else:
-              print("Patch already present; skipping.")
-          PY
-
-      - name: Build library (FULL RANGE, incremental)
+      - name: Build library (FULL RANGE, no max)
         run: |
           python build_pogo_library.py \
             --start "${{ steps.dates.outputs.START }}" \
             --end   "${{ steps.dates.outputs.END }}" \
-            --out pogo_library \
-            --max 2000
+            --out pogo_library
 
-      # 💾 Save (update) the cache for next run
       - name: Save pogo_library cache
         if: always()
         uses: actions/cache/save@v4
@@ -155,14 +82,16 @@ def save_posts(posts, target_dir):
           mkdir -p outputs/latest
           cp POGO_Digest.xlsx outputs/latest/POGO_Digest.xlsx
           cp POGO_Events.ics outputs/latest/POGO_Events.ics
-          echo "# Latest POGO Digest" > outputs/latest/README.md
-          echo "- Built on: ${{ steps.dates.outputs.END }}" >> outputs/latest/README.md
-          echo "- Range: ${{ steps.dates.outputs.START }} → ${{ steps.dates.outputs.END }}" >> outputs/latest/README.md
-          echo "- Files: POGO_Digest.xlsx, POGO_Events.ics" >> outputs/latest/README.md
+          {
+            echo "# Latest POGO Digest"
+            echo "- Built on: ${{ steps.dates.outputs.END }}"
+            echo "- Range: ${{ steps.dates.outputs.START }} → ${{ steps.dates.outputs.END }}"
+            echo "- Files: POGO_Digest.xlsx, POGO_Events.ics"
+          } > outputs/latest/README.md
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add outputs/latest/ pogo_library/niantic/index.json pogo_library/leekduck/index.json
-          git commit -m "Update latest digest (incremental): ${{ steps.dates.outputs.START }} → ${{ steps.dates.outputs.END }}" || echo "No changes to commit"
+          git commit -m "Update latest digest: ${{ steps.dates.outputs.START }} → ${{ steps.dates.outputs.END }}" || echo "No changes to commit"
           git push
 
   release:
@@ -180,7 +109,7 @@ def save_posts(posts, target_dir):
         with:
           tag_name: pogo-digest-${{ needs.build.outputs.END }}
           name: "POGO Digest ${{ needs.build.outputs.END }}"
-          body: "Automated monthly digest (incremental; June 2024 → ${{ needs.build.outputs.END }})."
+          body: "Automated monthly digest (June 2024 → ${{ needs.build.outputs.END }})."
           files: |
             dist/POGO_Digest.xlsx
             dist/POGO_Events.ics
