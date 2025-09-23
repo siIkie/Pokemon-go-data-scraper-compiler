@@ -2,7 +2,7 @@ name: POGO Events Digest (Smart Watch)
 
 on:
   schedule:
-    - cron: "0 */2 * * *"     # every 2 hours
+    - cron: "0 */2 * * *"     # every 2 hours (UTC)
   workflow_dispatch:           # allow manual run
 
 permissions:
@@ -27,8 +27,8 @@ jobs:
       - name: Fetch feeds and compute hashes
         id: watch
         run: |
+          set -e
           mkdir -p .state
-          # Feeds/pages to watch
           NIANTIC_RSS="https://pokemongolive.com/news/?format=rss"
           LEEK_EVENTS="https://leekduck.com/events/"
           LEEK_CAL="https://leekduck.com/calendar/"
@@ -37,11 +37,9 @@ jobs:
           curl -LfsS "$LEEK_EVENTS"  -o .state/leek_events.html  || true
           curl -LfsS "$LEEK_CAL"     -o .state/leek_cal.html  || true
 
-          # Combined hash of fetched content
           HASH=$(cat .state/niantic.xml .state/leek_events.html .state/leek_cal.html 2>/dev/null | sha256sum | cut -d' ' -f1)
           echo "current_hash=$HASH"
 
-          # Previous hash
           PREV=""
           if [ -f .state/feeds.json ]; then
             PREV=$(grep -oE '"hash":"[^"]+"' .state/feeds.json | cut -d':' -f2 | tr -d '"')
@@ -72,7 +70,6 @@ jobs:
             echo "- Leek Duck Events"
             echo "- Leek Duck Calendar"
           } > updates/"$TODAY"/summary.txt
-
           cp updates/"$TODAY"/summary.txt updates/latest.txt
 
       - name: Commit state + summaries (only on change)
@@ -81,8 +78,8 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add .state/feeds.json updates/
-          git commit -m "Update feed state + summary: ${{ steps.dates.outputs.END }}" || echo "No changes to commit"
-          git push
+          git commit -m "Update feed state + summary: ${{ steps.dates.outputs.END }}" || echo "No state changes to commit"
+          git push || echo "No state changes to push"
 
   build:
     needs: check
@@ -167,11 +164,11 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add outputs/latest/ pogo_library/niantic/index.json pogo_library/leekduck/index.json
           git commit -m "Update latest digest: ${{ steps.dates.outputs.START }} → ${{ steps.dates.outputs.END }}" || echo "No changes to commit"
-          git push
+          git push || echo "No changes to push"
 
   release:
     needs: build
-    # Releases only when feeds changed OR manual run (so automated runs don’t spam releases unless there’s new info)
+    # Releases on real changes (from watcher) OR manual runs (for testing)
     if: needs.check.outputs.changed == 'true' || github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
     steps:
