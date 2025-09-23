@@ -61,8 +61,4 @@ The digest is designed to be lightweight and portable, which opens up some fun p
 
 - If the Release doesn’t update, make sure:  
   - Repository → Settings → Actions → Workflow permissions is set to Read and write. Note that this inaccessible in the github mobile app, if that's what you happen to be using.
-  - The workflow file includes:  
-    ```yaml
-    permissions:
-      contents: write
     ```
