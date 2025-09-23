@@ -2,7 +2,7 @@ name: POGO Events Digest (Smart Watch)
 
 on:
   schedule:
-    - cron: "*/5 * * * *"   # every 5 minutes (TEMPORARY while testing)
+    - cron: "0 */2 * * *"   # every 2 hours
   workflow_dispatch:         # manual run
 
 # Ensure scheduled runs can push commits and update releases
