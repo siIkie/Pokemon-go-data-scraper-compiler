@@ -2,8 +2,12 @@ name: POGO Events Digest (Smart Watch)
 
 on:
   schedule:
-    - cron: "*/5 * * * *"   # every 2 hours
+    - cron: "*/5 * * * *"   # every 5 minutes (TEMPORARY while testing)
   workflow_dispatch:         # manual run
+
+# Ensure scheduled runs can push commits and update releases
+permissions:
+  contents: write
 
 jobs:
   check:
@@ -152,3 +156,5 @@ jobs:
             dist/POGO_Digest.csv
             dist/POGO_Digest.json
             dist/POGO_Events.ics
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
