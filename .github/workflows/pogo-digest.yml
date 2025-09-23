@@ -2,84 +2,50 @@ name: POGO Events Digest (Smart Watch)
 
 on:
   schedule:
-    - cron: "0 */2 * * *"     # every 2 hours (UTC)
-  workflow_dispatch:           # allow manual run
-
-permissions:
-  contents: write
+    - cron: "0 */2 * * *"   # every 2 hours
+  workflow_dispatch:         # manual run
 
 jobs:
   check:
     runs-on: ubuntu-latest
     outputs:
       changed: ${{ steps.watch.outputs.changed }}
-      END: ${{ steps.dates.outputs.END }}
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+
+      - name: Restore feed state
+        id: restore
+        uses: actions/cache@v4
         with:
-          fetch-depth: 0
+          path: .state
+          key: feed-state
 
-      - name: Compute dates (today)
-        id: dates
-        run: echo "END=$(date -u +%F)" >> $GITHUB_OUTPUT
-
-      - name: Fetch feeds and compute hashes
+      - name: Watch feeds
         id: watch
         run: |
-          set -e
           mkdir -p .state
-          NIANTIC_RSS="https://pokemongolive.com/news/?format=rss"
-          LEEK_EVENTS="https://leekduck.com/events/"
-          LEEK_CAL="https://leekduck.com/calendar/"
+          curl -s https://pokemongolive.com/news/?format=rss -o .state/niantic.xml.new
+          curl -s https://leekduck.com/events/ -o .state/leek_events.html.new
+          curl -s https://leekduck.com/calendar/ -o .state/leek_cal.html.new
 
-          curl -LfsS "$NIANTIC_RSS"  -o .state/niantic.xml  || true
-          curl -LfsS "$LEEK_EVENTS"  -o .state/leek_events.html  || true
-          curl -LfsS "$LEEK_CAL"     -o .state/leek_cal.html  || true
+          CHANGED=false
+          for f in niantic.xml leek_events.html leek_cal.html; do
+            if ! cmp -s .state/$f .state/$f.new; then
+              echo "Feed $f changed"
+              mv .state/$f.new .state/$f
+              CHANGED=true
+            else
+              rm .state/$f.new
+            fi
+          done
+          echo "changed=$CHANGED" >> $GITHUB_OUTPUT
 
-          HASH=$(cat .state/niantic.xml .state/leek_events.html .state/leek_cal.html 2>/dev/null | sha256sum | cut -d' ' -f1)
-          echo "current_hash=$HASH"
-
-          PREV=""
-          if [ -f .state/feeds.json ]; then
-            PREV=$(grep -oE '"hash":"[^"]+"' .state/feeds.json | cut -d':' -f2 | tr -d '"')
-          fi
-          echo "previous_hash=$PREV"
-
-          if [ "$HASH" != "$PREV" ] && [ -n "$HASH" ]; then
-            echo "changed=true" >> $GITHUB_OUTPUT
-            printf '{ "hash":"%s", "updated":"%s" }\n' "$HASH" "$(date -u +%FT%TZ)" > .state/feeds.json
-          else
-            echo "changed=false" >> $GITHUB_OUTPUT
-          fi
-
-      - name: Write update summaries (separate folder)
+      - name: Save feed state
         if: steps.watch.outputs.changed == 'true'
-        run: |
-          set -e
-          TODAY="${{ steps.dates.outputs.END }}"
-          mkdir -p updates/"$TODAY" updates
-          {
-            echo "# Pokémon GO Digest Update"
-            echo "Date (UTC): $TODAY"
-            echo
-            echo "Feeds updated → new posts or edits detected."
-            echo
-            echo "Sources checked:"
-            echo "- Niantic News RSS"
-            echo "- Leek Duck Events"
-            echo "- Leek Duck Calendar"
-          } > updates/"$TODAY"/summary.txt
-          cp updates/"$TODAY"/summary.txt updates/latest.txt
-
-      - name: Commit state + summaries (only on change)
-        if: steps.watch.outputs.changed == 'true'
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add .state/feeds.json updates/
-          git commit -m "Update feed state + summary: ${{ steps.dates.outputs.END }}" || echo "No state changes to commit"
-          git push || echo "No state changes to push"
+        uses: actions/cache@v4
+        with:
+          path: .state
+          key: feed-state-${{ github.run_id }}
 
   build:
     needs: check
@@ -88,49 +54,28 @@ jobs:
     outputs:
       END: ${{ steps.dates.outputs.END }}
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
+      - uses: actions/checkout@v4
 
-      - name: Set up Python
+      - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-          cache: "pip"
 
       - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
+        run: pip install -r requirements.txt
 
-      - name: Compute date range (full history → today)
+      - name: Compute date range
         id: dates
         run: |
           echo "START=2024-06-01" >> $GITHUB_OUTPUT
-          echo "END=$(date -u +%F)" >> $GITHUB_OUTPUT
+          echo "END=$(date +%Y-%m-%d)" >> $GITHUB_OUTPUT
 
-      - name: Restore pogo_library cache
-        uses: actions/cache/restore@v4
-        with:
-          path: pogo_library
-          key: pogolib-${{ steps.dates.outputs.END }}
-          restore-keys: |
-            pogolib-
-
-      - name: Build library (FULL RANGE)
+      - name: Build library
         run: |
           python build_pogo_library.py \
             --start "${{ steps.dates.outputs.START }}" \
             --end   "${{ steps.dates.outputs.END }}" \
             --out pogo_library
-
-      - name: Save pogo_library cache
-        if: always()
-        uses: actions/cache/save@v4
-        with:
-          path: pogo_library
-          key: pogolib-${{ steps.dates.outputs.END }}
 
       - name: Build digest + ICS
         run: |
@@ -139,26 +84,45 @@ jobs:
             --out POGO_Digest.xlsx \
             --ics POGO_Events.ics
 
+      - name: Export CSV + JSON (fast formats)
+        run: |
+          python - <<'PY'
+          import pandas as pd
+          df = pd.read_excel("POGO_Digest.xlsx", sheet_name="Events")
+          keep = [c for c in [
+              "Start Date","End Date","Event Name",
+              "Category (CD / CD Classic / Raid / Mega / Shadow Raid / Spotlight / Research / Other)"
+          ] if c in df.columns]
+          if keep:
+              df = df[keep]
+          df.to_csv("POGO_Digest.csv", index=False)
+          df.to_json("POGO_Digest.json", orient="records", date_format="iso")
+          PY
+
       - name: Upload build artifacts
         uses: actions/upload-artifact@v4
         with:
           name: POGO_Digest_${{ steps.dates.outputs.END }}
           path: |
             POGO_Digest.xlsx
+            POGO_Digest.csv
+            POGO_Digest.json
             POGO_Events.ics
             pogo_library/niantic/index.json
             pogo_library/leekduck/index.json
 
-      - name: Commit stable copies to repo (downloads live here)
+      - name: Commit stable copies to repo
         run: |
           mkdir -p outputs/latest
           cp POGO_Digest.xlsx outputs/latest/POGO_Digest.xlsx
-          cp POGO_Events.ics outputs/latest/POGO_Events.ics
+          cp POGO_Digest.csv  outputs/latest/POGO_Digest.csv
+          cp POGO_Digest.json outputs/latest/POGO_Digest.json
+          cp POGO_Events.ics  outputs/latest/POGO_Events.ics
           {
             echo "# Latest POGO Digest"
             echo "- Built on: ${{ steps.dates.outputs.END }}"
             echo "- Range: ${{ steps.dates.outputs.START }} → ${{ steps.dates.outputs.END }}"
-            echo "- Files: POGO_Digest.xlsx, POGO_Events.ics"
+            echo "- Files: POGO_Digest.xlsx, POGO_Digest.csv, POGO_Digest.json, POGO_Events.ics"
           } > outputs/latest/README.md
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -168,11 +132,10 @@ jobs:
 
   release:
     needs: build
-    # Releases on real changes (from watcher) OR manual runs (for testing)
     if: needs.check.outputs.changed == 'true' || github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
     steps:
-      - name: Download artifact from build
+      - name: Download artifact
         uses: actions/download-artifact@v4
         with:
           name: POGO_Digest_${{ needs.build.outputs.END }}
@@ -186,4 +149,6 @@ jobs:
           body: "Automated digest after feed change or manual trigger."
           files: |
             dist/POGO_Digest.xlsx
+            dist/POGO_Digest.csv
+            dist/POGO_Digest.json
             dist/POGO_Events.ics
