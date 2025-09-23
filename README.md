@@ -51,8 +51,3 @@ Outputs:
 - Schedule monthly: `cron`/Task Scheduler to run on the 1st of each month.
 - Add more sources (e.g., GO Hub) by copying the scraper pattern.
 - If a site changes HTML, tweak selectors in `build_pogo_library.py` and `digest_from_library.py`.
-
-## Why this solves your request
-- You **don’t** have to upload individual posts.
-- You get a **local library** of *all* event posts (HTML archived), plus an offline digest builder.
-- You can re-run the digest anytime (no internet) to produce updated summaries or calendars.
