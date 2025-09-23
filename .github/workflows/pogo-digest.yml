@@ -1,19 +1,75 @@
-name: POGO Events Digest
+name: POGO Events Digest (Smart Watch)
 
 on:
   schedule:
-    - cron: "0 9 1 * *"   # 09:00 UTC on the 1st of each month
-  workflow_dispatch:
+    - cron: "0 */2 * * *"   # every 2 hours
+  workflow_dispatch:         # allow manual run
 
 permissions:
   contents: write
 
 jobs:
+  check:
+    runs-on: ubuntu-latest
+    outputs:
+      changed: ${{ steps.watch.outputs.changed }}
+      END: ${{ steps.dates.outputs.END }}
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Compute dates (today)
+        id: dates
+        run: echo "END=$(date -u +%F)" >> $GITHUB_OUTPUT
+
+      - name: Fetch feeds and compute hashes
+        id: watch
+        run: |
+          mkdir -p .state
+          # Feeds/pages to watch (add more if you like)
+          NIANTIC_RSS="https://pokemongolive.com/news/?format=rss"
+          LEEK_EVENTS="https://leekduck.com/events/"
+          LEEK_CAL="https://leekduck.com/calendar/"
+
+          curl -LfsS "$NIANTIC_RSS" -o .state/niantic.xml || true
+          curl -LfsS "$LEEK_EVENTS" -o .state/leek_events.html || true
+          curl -LfsS "$LEEK_CAL" -o .state/leek_cal.html || true
+
+          # Compute combined hash
+          HASH=$(cat .state/niantic.xml .state/leek_events.html .state/leek_cal.html 2>/dev/null | sha256sum | cut -d' ' -f1)
+          echo "current_hash=$HASH"
+
+          # Load previous hash (if any)
+          PREV=""
+          if [ -f .state/feeds.json ]; then
+            PREV=$(grep -oE '"hash":"[^"]+"' .state/feeds.json | cut -d':' -f2 | tr -d '"')
+          fi
+          echo "previous_hash=$PREV"
+
+          if [ "$HASH" != "$PREV" ] && [ -n "$HASH" ]; then
+            echo "changed=true" >> $GITHUB_OUTPUT
+            printf '{ "hash":"%s", "updated":"%s" }\n' "$HASH" "$(date -u +%FT%TZ)" > .state/feeds.json
+          else
+            echo "changed=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Commit new state (if changed)
+        if: steps.watch.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .state/feeds.json
+          git commit -m "Update feed state: ${{ steps.dates.outputs.END }}" || echo "No state changes to commit"
+          git push
+
   build:
+    needs: check
+    if: needs.check.outputs.changed == 'true' || github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
     outputs:
       END: ${{ steps.dates.outputs.END }}
-
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
@@ -37,8 +93,8 @@ jobs:
           echo "START=2024-06-01" >> $GITHUB_OUTPUT
           echo "END=$(date -u +%F)" >> $GITHUB_OUTPUT
 
+      # Optional cache for speed; safe if empty
       - name: Restore pogo_library cache
-        id: cache-lib
         uses: actions/cache/restore@v4
         with:
           path: pogo_library
@@ -46,7 +102,7 @@ jobs:
           restore-keys: |
             pogolib-
 
-      - name: Build library (FULL RANGE, no max)
+      - name: Build library (FULL RANGE)
         run: |
           python build_pogo_library.py \
             --start "${{ steps.dates.outputs.START }}" \
@@ -77,7 +133,7 @@ jobs:
             pogo_library/niantic/index.json
             pogo_library/leekduck/index.json
 
-      - name: Commit stable copies to repo (always available in app)
+      - name: Commit stable copies to repo
         run: |
           mkdir -p outputs/latest
           cp POGO_Digest.xlsx outputs/latest/POGO_Digest.xlsx
@@ -90,12 +146,13 @@ jobs:
           } > outputs/latest/README.md
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add outputs/latest/ pogo_library/niantic/index.json pogo_library/leekduck/index.json
-          git commit -m "Update latest digest: ${{ steps.dates.outputs.START }} → ${{ steps.dates.outputs.END }}" || echo "No changes to commit"
+          git add outputs/latest/ pogo_library/niantic/index.json pogo_library/leekduck/index.json .state/feeds.json
+          git commit -m "Update digest: ${{ steps.dates.outputs.START }} → ${{ steps.dates.outputs.END }}" || echo "No changes to commit"
           git push
 
   release:
     needs: build
+    if: needs.check.outputs.changed == 'true' || github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
     steps:
       - name: Download artifact from build
@@ -109,7 +166,7 @@ jobs:
         with:
           tag_name: pogo-digest-${{ needs.build.outputs.END }}
           name: "POGO Digest ${{ needs.build.outputs.END }}"
-          body: "Automated monthly digest (June 2024 → ${{ needs.build.outputs.END }})."
+          body: "Automated digest after feed change."
           files: |
             dist/POGO_Digest.xlsx
             dist/POGO_Events.ics
