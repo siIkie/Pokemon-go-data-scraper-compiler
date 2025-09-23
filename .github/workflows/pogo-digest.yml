@@ -1,0 +1,94 @@
+name: POGO Events Digest
+
+on:
+  schedule:
+    - cron: "0 9 1 * *"   # 09:00 UTC on the 1st of each month
+  workflow_dispatch:       # allow manual runs from the Actions tab
+
+permissions:
+  contents: write          # needed to push commits and create releases
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    outputs:
+      END: ${{ steps.dates.outputs.END }}
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Compute date range (since training → today)
+        id: dates
+        run: |
+          echo "START=2024-06-01" >> $GITHUB_OUTPUT
+          echo "END=$(date -u +%F)" >> $GITHUB_OUTPUT
+
+      - name: Build library
+        run: |
+          python build_pogo_library.py \
+            --start "${{ steps.dates.outputs.START }}" \
+            --end "${{ steps.dates.outputs.END }}" \
+            --out pogo_library \
+            --max 2000
+
+      - name: Build digest + ICS
+        run: |
+          python digest_from_library.py \
+            --lib pogo_library \
+            --out POGO_Digest.xlsx \
+            --ics POGO_Events.ics
+
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: POGO_Digest_${{ steps.dates.outputs.END }}
+          path: |
+            POGO_Digest.xlsx
+            POGO_Events.ics
+            pogo_library/niantic/index.json
+            pogo_library/leekduck/index.json
+
+      - name: Commit results back to repo
+        run: |
+          mkdir -p outputs
+          cp POGO_Digest.xlsx outputs/
+          cp POGO_Events.ics outputs/
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add outputs/ pogo_library/niantic/index.json pogo_library/leekduck/index.json
+          git commit -m "POGO digest update: ${{ steps.dates.outputs.START }} → ${{ steps.dates.outputs.END }}" || echo "No changes to commit"
+          git push
+
+  release:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download artifact from build
+        uses: actions/download-artifact@v4
+        with:
+          name: POGO_Digest_${{ needs.build.outputs.END }}
+          path: dist
+
+      - name: Create/Update Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: pogo-digest-${{ needs.build.outputs.END }}
+          name: "POGO Digest ${{ needs.build.outputs.END }}"
+          body: "Automated monthly digest."
+          files: |
+            dist/POGO_Digest.xlsx
+            dist/POGO_Events.ics
