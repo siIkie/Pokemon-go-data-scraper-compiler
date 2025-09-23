@@ -3,7 +3,7 @@ name: POGO Events Digest
 on:
   schedule:
     - cron: "0 9 1 * *"   # 09:00 UTC on the 1st of each month
-  workflow_dispatch:       # allow manual runs from the Actions tab
+  workflow_dispatch:       # manual trigger from Actions tab
 
 permissions:
   contents: write          # needed to push commits and create releases
@@ -37,11 +37,11 @@ jobs:
           echo "START=2024-06-01" >> $GITHUB_OUTPUT
           echo "END=$(date -u +%F)" >> $GITHUB_OUTPUT
 
-      - name: Build library
+      - name: Build library (full range)
         run: |
           python build_pogo_library.py \
             --start "${{ steps.dates.outputs.START }}" \
-            --end "${{ steps.dates.outputs.END }}" \
+            --end   "${{ steps.dates.outputs.END }}" \
             --out pogo_library \
             --max 2000
 
@@ -62,15 +62,20 @@ jobs:
             pogo_library/niantic/index.json
             pogo_library/leekduck/index.json
 
-      - name: Commit results back to repo
+      - name: Commit stable copies to repo (always available in app)
         run: |
-          mkdir -p outputs
-          cp POGO_Digest.xlsx outputs/
-          cp POGO_Events.ics outputs/
+          mkdir -p outputs/latest
+          cp POGO_Digest.xlsx outputs/latest/POGO_Digest.xlsx
+          cp POGO_Events.ics outputs/latest/POGO_Events.ics
+          # Optional: quick summary file
+          echo "# Latest POGO Digest" > outputs/latest/README.md
+          echo "- Built on: ${{ steps.dates.outputs.END }}" >> outputs/latest/README.md
+          echo "- Range: ${{ steps.dates.outputs.START }} → ${{ steps.dates.outputs.END }}" >> outputs/latest/README.md
+          echo "- Files: POGO_Digest.xlsx, POGO_Events.ics" >> outputs/latest/README.md
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add outputs/ pogo_library/niantic/index.json pogo_library/leekduck/index.json
-          git commit -m "POGO digest update: ${{ steps.dates.outputs.START }} → ${{ steps.dates.outputs.END }}" || echo "No changes to commit"
+          git add outputs/latest/ pogo_library/niantic/index.json pogo_library/leekduck/index.json
+          git commit -m "Update latest digest: ${{ steps.dates.outputs.START }} → ${{ steps.dates.outputs.END }}" || echo "No changes to commit"
           git push
 
   release:
@@ -88,7 +93,7 @@ jobs:
         with:
           tag_name: pogo-digest-${{ needs.build.outputs.END }}
           name: "POGO Digest ${{ needs.build.outputs.END }}"
-          body: "Automated monthly digest."
+          body: "Automated monthly digest (June 2024 → ${{ needs.build.outputs.END }})."
           files: |
             dist/POGO_Digest.xlsx
             dist/POGO_Events.ics
