@@ -1,0 +1,9 @@
+# Pokémon GO Digest Update
+Date (UTC): 2025-09-23
+
+Feeds updated → new posts or edits detected.
+
+Sources checked:
+- Niantic News RSS
+- Leek Duck Events
+- Leek Duck Calendar
