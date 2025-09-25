@@ -10,7 +10,6 @@ Start Date,End Date,Event Name,Category (CD / CD Classic / Raid / Mega / Shadow 
 2025-09-23,2025-09-23,Mega Kangaskhan and Mega Lopunny in Mega Raids,Raid/Mega
 2025-09-23,2025-09-23,Dialga in 5-star Raid Battles,Raid/Mega
 2025-09-23,2025-09-23,Raid Hours,Raid/Mega
-2025-09-24,2025-09-24,Dialga (Origin Forme) Raid Hour,Raid/Mega
 2025-09-27,2025-09-27,"Bangkok, Thailand - Pokémon GO City Safari",Event/News
 2025-09-27,2025-09-27,"Amsterdam, Netherlands - Pokémon GO City Safari",Event/News
 2025-09-27,2025-09-27,"Valencia, Spain - Pokémon GO City Safari",Event/News
@@ -25,11 +24,18 @@ Start Date,End Date,Event Name,Category (CD / CD Classic / Raid / Mega / Shadow 
 2025-09-30,2025-09-30,Steel Skyline,Event/News
 2025-10-01,2025-10-01,Dialga (Origin Forme) Raid Hour,Raid/Mega
 2025-10-04,2025-10-04,Mega Metagross Raid Day,Raid/Mega
+2025-10-06,2025-10-06,Dynamax Drilbur during Max Monday,Event/News
 2025-10-10,2025-10-10,Harvest Festival,Event/News
 2025-10-12,2025-10-12,Solosis Community Day,Event/News
+2025-10-13,2025-10-13,Dynamax Bounsweet during Max Monday,Event/News
+2025-10-14,2025-10-14,Petilil Spotlight Hour,Event/News
 2025-10-14,2025-10-14,Master Premier and Great League Remix | Tales of Transformation,Event/News
 2025-10-14,2025-10-14,Master Premier,Event/News
+2025-10-20,2025-10-20,Dynamax Gastly during Max Monday,Event/News
+2025-10-21,2025-10-21,Gastly Spotlight Hour,Event/News
 2025-10-25,2025-10-25,GO Battle Weekend: Tales of Transformation,Event/News
+2025-10-27,2025-10-27,Dynamax Woobat during Max Monday,Event/News
+2025-10-28,2025-10-28,Sinistea Spotlight Hour,Event/News
 2025-10-28,2025-10-28,Great League and Halloween Cup: Great League Edition | Tales of Transformation,Event/News
 2025-10-28,2025-10-28,Great League,Event/News
 2025-11-04,2025-11-04,Ultra League and Jungle Cup: Great League Edition | Tales of Transformation,Event/News
@@ -49,11 +55,7 @@ Start Date,End Date,Event Name,Category (CD / CD Classic / Raid / Mega / Shadow 
 2025-11-25,2025-11-25,"Catch Cup: Tales of Transformation: Great Edition, Ultra League, and Master League | Tales of Transformation",Event/News
 2025-11-25,2025-11-25,Catch Cup: Tales of Transformation: Great Edition,Event/News
 2025-11-30,2025-11-30,November Community Day,Event/News
-,,Dialga (Origin Forme) Raid Hour,Raid/Mega
-,,Dialga (Origin Forme) Raid Hour,Raid/Mega
-,,Dialga (Origin Forme) Raid Hour,Raid/Mega
-,,Dialga (Origin Forme) Raid Hour,Raid/Mega
-,,Dialga (Origin Forme) Raid Hour,Raid/Mega
+,,"Ditto, Dunsparce, Dudunsparce PokéStop Showcases",Event/News
 ,,"Ditto, Dunsparce, Dudunsparce PokéStop Showcases",Event/News
 ,,"Ditto, Dunsparce, Dudunsparce PokéStop Showcases",Event/News
 ,,"Ditto, Dunsparce, Dudunsparce PokéStop Showcases",Event/News
@@ -86,10 +88,6 @@ Start Date,End Date,Event Name,Category (CD / CD Classic / Raid / Mega / Shadow 
 ,,Mega Camerupt Raid Day,Raid/Mega
 ,,Mega Camerupt Raid Day,Raid/Mega
 ,,Mega Camerupt Raid Day,Raid/Mega
-,,Dynamax Beldum during Max Monday,Event/News
-,,Dynamax Beldum during Max Monday,Event/News
-,,Dynamax Beldum during Max Monday,Event/News
-,,Dynamax Beldum during Max Monday,Event/News
 ,,Mega Kangaskhan and Mega Lopunny in Mega Raids,Raid/Mega
 ,,Mega Kangaskhan and Mega Lopunny in Mega Raids,Raid/Mega
 ,,Mega Kangaskhan and Mega Lopunny in Mega Raids,Raid/Mega
@@ -110,6 +108,10 @@ Start Date,End Date,Event Name,Category (CD / CD Classic / Raid / Mega / Shadow 
 ,,Mega Metagross Raid Day,Raid/Mega
 ,,Mega Metagross Raid Day,Raid/Mega
 ,,Mega Metagross Raid Day,Raid/Mega
+,,Dynamax Beldum during Max Monday,Event/News
+,,Dynamax Beldum during Max Monday,Event/News
+,,Dynamax Beldum during Max Monday,Event/News
+,,Dynamax Beldum during Max Monday,Event/News
 ,,GO Pass: September,Event/News
 ,,GO Pass: September,Event/News
 ,,GO Pass: September,Event/News
@@ -126,6 +128,10 @@ Start Date,End Date,Event Name,Category (CD / CD Classic / Raid / Mega / Shadow 
 ,,Great League and Fantasy Cup: Great League Edition | Tales of Transformation,Event/News
 ,,Great League and Fantasy Cup: Great League Edition | Tales of Transformation,Event/News
 ,,Great League and Fantasy Cup: Great League Edition | Tales of Transformation,Event/News
+,,Ferroseed Spotlight Hour,Spotlight
+,,Ferroseed Spotlight Hour,Spotlight
+,,Ferroseed Spotlight Hour,Spotlight
+,,Ferroseed Spotlight Hour,Spotlight
 ,,Steel Skyline,Event/News
 ,,Steel Skyline,Event/News
 ,,Steel Skyline,Event/News
@@ -134,10 +140,18 @@ Start Date,End Date,Event Name,Category (CD / CD Classic / Raid / Mega / Shadow 
 ,,Solosis Community Day,Community Day
 ,,Solosis Community Day,Community Day
 ,,Solosis Community Day,Community Day
+,,Dynamax Drilbur during Max Monday,Event/News
+,,Dynamax Drilbur during Max Monday,Event/News
+,,Dynamax Drilbur during Max Monday,Event/News
+,,Dynamax Drilbur during Max Monday,Event/News
 ,,Ultra League and Jungle Cup: Great League Edition | Tales of Transformation,Event/News
 ,,Ultra League and Jungle Cup: Great League Edition | Tales of Transformation,Event/News
 ,,Ultra League and Jungle Cup: Great League Edition | Tales of Transformation,Event/News
 ,,Ultra League and Jungle Cup: Great League Edition | Tales of Transformation,Event/News
+,,Petilil Spotlight Hour,Spotlight
+,,Petilil Spotlight Hour,Spotlight
+,,Petilil Spotlight Hour,Spotlight
+,,Petilil Spotlight Hour,Spotlight
 ,,XP Celebration,Event/News
 ,,XP Celebration,Event/News
 ,,XP Celebration,Event/News
@@ -146,10 +160,22 @@ Start Date,End Date,Event Name,Category (CD / CD Classic / Raid / Mega / Shadow 
 ,,Harvest Festival,Event/News
 ,,Harvest Festival,Event/News
 ,,Harvest Festival,Event/News
+,,Dynamax Bounsweet during Max Monday,Event/News
+,,Dynamax Bounsweet during Max Monday,Event/News
+,,Dynamax Bounsweet during Max Monday,Event/News
+,,Dynamax Bounsweet during Max Monday,Event/News
 ,,Master Premier and Great League Remix | Tales of Transformation,Event/News
 ,,Master Premier and Great League Remix | Tales of Transformation,Event/News
 ,,Master Premier and Great League Remix | Tales of Transformation,Event/News
 ,,Master Premier and Great League Remix | Tales of Transformation,Event/News
+,,Gastly Spotlight Hour,Spotlight
+,,Gastly Spotlight Hour,Spotlight
+,,Gastly Spotlight Hour,Spotlight
+,,Gastly Spotlight Hour,Spotlight
+,,Dynamax Gastly during Max Monday,Event/News
+,,Dynamax Gastly during Max Monday,Event/News
+,,Dynamax Gastly during Max Monday,Event/News
+,,Dynamax Gastly during Max Monday,Event/News
 ,,GO Battle Weekend: Tales of Transformation,Event/News
 ,,GO Battle Weekend: Tales of Transformation,Event/News
 ,,GO Battle Weekend: Tales of Transformation,Event/News
@@ -158,6 +184,14 @@ Start Date,End Date,Event Name,Category (CD / CD Classic / Raid / Mega / Shadow 
 ,,"Great League, Ultra League, and Master League | Tales of Transformation",Event/News
 ,,"Great League, Ultra League, and Master League | Tales of Transformation",Event/News
 ,,"Great League, Ultra League, and Master League | Tales of Transformation",Event/News
+,,Sinistea Spotlight Hour,Spotlight
+,,Sinistea Spotlight Hour,Spotlight
+,,Sinistea Spotlight Hour,Spotlight
+,,Sinistea Spotlight Hour,Spotlight
+,,Dynamax Woobat during Max Monday,Event/News
+,,Dynamax Woobat during Max Monday,Event/News
+,,Dynamax Woobat during Max Monday,Event/News
+,,Dynamax Woobat during Max Monday,Event/News
 ,,Great League and Halloween Cup: Great League Edition | Tales of Transformation,Event/News
 ,,Great League and Halloween Cup: Great League Edition | Tales of Transformation,Event/News
 ,,Great League and Halloween Cup: Great League Edition | Tales of Transformation,Event/News
@@ -198,11 +232,7 @@ Start Date,End Date,Event Name,Category (CD / CD Classic / Raid / Mega / Shadow 
 ,,"Catch Cup: Tales of Transformation: Great Edition, Ultra League, and Master League | Tales of Transformation",Event/News
 ,,"Catch Cup: Tales of Transformation: Great Edition, Ultra League, and Master League | Tales of Transformation",Event/News
 ,,"Catch Cup: Tales of Transformation: Great Edition, Ultra League, and Master League | Tales of Transformation",Event/News
-,,Dialga (Origin Forme) Raid Hour,Raid/Mega
-,,Dialga (Origin Forme) Raid Hour,Raid/Mega
-,,Dialga (Origin Forme) Raid Hour,Raid/Mega
-,,Dialga (Origin Forme) Raid Hour,Raid/Mega
-,,Dialga (Origin Forme) Raid Hour,Raid/Mega
+,,"Bangkok, Thailand - Pokémon GO City Safari",Event/News
 ,,"Bangkok, Thailand - Pokémon GO City Safari",Event/News
 ,,"Bangkok, Thailand - Pokémon GO City Safari",Event/News
 ,,"Bangkok, Thailand - Pokémon GO City Safari",Event/News
@@ -255,10 +285,18 @@ Start Date,End Date,Event Name,Category (CD / CD Classic / Raid / Mega / Shadow 
 ,,Mega Metagross Raid Day,Raid/Mega
 ,,Mega Metagross Raid Day,Raid/Mega
 ,,Mega Metagross Raid Day,Raid/Mega
+,,Dynamax Drilbur during Max Monday,Event/News
+,,Dynamax Drilbur during Max Monday,Event/News
+,,Dynamax Drilbur during Max Monday,Event/News
+,,Dynamax Drilbur during Max Monday,Event/News
 ,,Ultra League and Jungle Cup: Great League Edition | Tales of Transformation,Event/News
 ,,Ultra League and Jungle Cup: Great League Edition | Tales of Transformation,Event/News
 ,,Ultra League and Jungle Cup: Great League Edition | Tales of Transformation,Event/News
 ,,Ultra League and Jungle Cup: Great League Edition | Tales of Transformation,Event/News
+,,Ferroseed Spotlight Hour,Spotlight
+,,Ferroseed Spotlight Hour,Spotlight
+,,Ferroseed Spotlight Hour,Spotlight
+,,Ferroseed Spotlight Hour,Spotlight
 ,,Harvest Festival,Event/News
 ,,Harvest Festival,Event/News
 ,,Harvest Festival,Event/News
@@ -267,22 +305,46 @@ Start Date,End Date,Event Name,Category (CD / CD Classic / Raid / Mega / Shadow 
 ,,Solosis Community Day,Community Day
 ,,Solosis Community Day,Community Day
 ,,Solosis Community Day,Community Day
+,,Dynamax Bounsweet during Max Monday,Event/News
+,,Dynamax Bounsweet during Max Monday,Event/News
+,,Dynamax Bounsweet during Max Monday,Event/News
+,,Dynamax Bounsweet during Max Monday,Event/News
 ,,Master Premier and Great League Remix | Tales of Transformation,Event/News
 ,,Master Premier and Great League Remix | Tales of Transformation,Event/News
 ,,Master Premier and Great League Remix | Tales of Transformation,Event/News
 ,,Master Premier and Great League Remix | Tales of Transformation,Event/News
+,,Petilil Spotlight Hour,Spotlight
+,,Petilil Spotlight Hour,Spotlight
+,,Petilil Spotlight Hour,Spotlight
+,,Petilil Spotlight Hour,Spotlight
+,,Dynamax Gastly during Max Monday,Event/News
+,,Dynamax Gastly during Max Monday,Event/News
+,,Dynamax Gastly during Max Monday,Event/News
+,,Dynamax Gastly during Max Monday,Event/News
 ,,"Great League, Ultra League, and Master League | Tales of Transformation",Event/News
 ,,"Great League, Ultra League, and Master League | Tales of Transformation",Event/News
 ,,"Great League, Ultra League, and Master League | Tales of Transformation",Event/News
 ,,"Great League, Ultra League, and Master League | Tales of Transformation",Event/News
+,,Gastly Spotlight Hour,Spotlight
+,,Gastly Spotlight Hour,Spotlight
+,,Gastly Spotlight Hour,Spotlight
+,,Gastly Spotlight Hour,Spotlight
 ,,GO Battle Weekend: Tales of Transformation,Event/News
 ,,GO Battle Weekend: Tales of Transformation,Event/News
 ,,GO Battle Weekend: Tales of Transformation,Event/News
 ,,GO Battle Weekend: Tales of Transformation,Event/News
+,,Dynamax Woobat during Max Monday,Event/News
+,,Dynamax Woobat during Max Monday,Event/News
+,,Dynamax Woobat during Max Monday,Event/News
+,,Dynamax Woobat during Max Monday,Event/News
 ,,Great League and Halloween Cup: Great League Edition | Tales of Transformation,Event/News
 ,,Great League and Halloween Cup: Great League Edition | Tales of Transformation,Event/News
 ,,Great League and Halloween Cup: Great League Edition | Tales of Transformation,Event/News
 ,,Great League and Halloween Cup: Great League Edition | Tales of Transformation,Event/News
+,,Sinistea Spotlight Hour,Spotlight
+,,Sinistea Spotlight Hour,Spotlight
+,,Sinistea Spotlight Hour,Spotlight
+,,Sinistea Spotlight Hour,Spotlight
 ,,Ultra League and Jungle Cup: Great League Edition | Tales of Transformation,Event/News
 ,,Ultra League and Jungle Cup: Great League Edition | Tales of Transformation,Event/News
 ,,Ultra League and Jungle Cup: Great League Edition | Tales of Transformation,Event/News
