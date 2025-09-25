@@ -26,6 +26,7 @@ Start Date,End Date,Event Name,Category (CD / CD Classic / Raid / Mega / Shadow 
 2025-10-06,2025-10-06,Dynamax Drilbur during Max Monday,Event/News
 2025-10-07,2025-10-07,Deoxys (Normal & Defense Forme) in 5-star Raid Battles,Raid/Mega
 2025-10-07,2025-10-07,Raid Hours,Raid/Mega
+2025-10-07,2025-10-07,"Mega Sceptile, Mega Blaziken, and Mega Swampert in Mega Raids",Raid/Mega
 2025-10-08,2025-10-08,Deoxys (Normal & Defense Forme) Raid Hour,Raid/Mega
 2025-10-10,2025-10-10,Harvest Festival,Event/News
 2025-10-12,2025-10-12,Solosis Community Day,Event/News
@@ -33,19 +34,26 @@ Start Date,End Date,Event Name,Category (CD / CD Classic / Raid / Mega / Shadow 
 2025-10-14,2025-10-14,Petilil Spotlight Hour,Event/News
 2025-10-14,2025-10-14,Deoxys (Attack & Speed Forme) in 5-star Raid Battles,Raid/Mega
 2025-10-14,2025-10-14,Raid Hours,Raid/Mega
+2025-10-14,2025-10-14,Mega Mawile and Mega Salamence in Mega Raids,Raid/Mega
 2025-10-14,2025-10-14,Master Premier and Great League Remix | Tales of Transformation,Event/News
 2025-10-14,2025-10-14,Master Premier,Event/News
 2025-10-15,2025-10-15,Deoxys (Attack & Speed Forme) Raid Hour,Raid/Mega
+2025-10-16,2025-10-16,Pokémon Legends: Z-A Celebration Event,Event/News
+2025-10-18,2025-10-18,Mega Raid Day,Raid/Mega
 2025-10-20,2025-10-20,Dynamax Gastly during Max Monday,Event/News
 2025-10-21,2025-10-21,Gastly Spotlight Hour,Event/News
+2025-10-21,2025-10-21,Halloween 2025 Part I,Event/News
 2025-10-21,2025-10-21,Genesect (Douse & Shock Drive) in 5-star Raid Battles,Raid/Mega
 2025-10-21,2025-10-21,Raid Hours,Raid/Mega
+2025-10-21,2025-10-21,Mega Houndoom and Mega Absol in Mega Raids,Raid/Mega
 2025-10-22,2025-10-22,Genesect Raid Hour,Raid/Mega
 2025-10-25,2025-10-25,GO Battle Weekend: Tales of Transformation,Event/News
 2025-10-27,2025-10-27,Dynamax Woobat during Max Monday,Event/News
+2025-10-27,2025-10-27,Halloween 2025 Part II,Event/News
 2025-10-28,2025-10-28,Sinistea Spotlight Hour,Event/News
 2025-10-28,2025-10-28,Giratina (Altered Forme) in 5-star Raid Battles,Raid/Mega
 2025-10-28,2025-10-28,Raid Hours,Raid/Mega
+2025-10-28,2025-10-28,"Mega Gengar, Mega Sableye, and Mega Banette in Mega Raids",Raid/Mega
 2025-10-28,2025-10-28,Great League and Halloween Cup: Great League Edition | Tales of Transformation,Event/News
 2025-10-28,2025-10-28,Great League,Event/News
 2025-10-29,2025-10-29,Giratina (Origin Forme) Raid Hour,Raid/Mega
@@ -159,6 +167,10 @@ Start Date,End Date,Event Name,Category (CD / CD Classic / Raid / Mega / Shadow 
 ,,Deoxys (Normal & Defense Forme) in 5-star Raid Battles,Raid/Mega
 ,,Deoxys (Normal & Defense Forme) in 5-star Raid Battles,Raid/Mega
 ,,Deoxys (Normal & Defense Forme) in 5-star Raid Battles,Raid/Mega
+,,"Mega Sceptile, Mega Blaziken, and Mega Swampert in Mega Raids",Raid/Mega
+,,"Mega Sceptile, Mega Blaziken, and Mega Swampert in Mega Raids",Raid/Mega
+,,"Mega Sceptile, Mega Blaziken, and Mega Swampert in Mega Raids",Raid/Mega
+,,"Mega Sceptile, Mega Blaziken, and Mega Swampert in Mega Raids",Raid/Mega
 ,,Ultra League and Jungle Cup: Great League Edition | Tales of Transformation,Event/News
 ,,Ultra League and Jungle Cup: Great League Edition | Tales of Transformation,Event/News
 ,,Ultra League and Jungle Cup: Great League Edition | Tales of Transformation,Event/News
@@ -179,14 +191,26 @@ Start Date,End Date,Event Name,Category (CD / CD Classic / Raid / Mega / Shadow 
 ,,Harvest Festival,Event/News
 ,,Harvest Festival,Event/News
 ,,Harvest Festival,Event/News
+,,Mega Raid Day,Raid/Mega
+,,Mega Raid Day,Raid/Mega
+,,Mega Raid Day,Raid/Mega
+,,Mega Raid Day,Raid/Mega
 ,,Dynamax Bounsweet during Max Monday,Event/News
 ,,Dynamax Bounsweet during Max Monday,Event/News
 ,,Dynamax Bounsweet during Max Monday,Event/News
 ,,Dynamax Bounsweet during Max Monday,Event/News
+,,Pokémon Legends: Z-A Celebration Event,Event/News
+,,Pokémon Legends: Z-A Celebration Event,Event/News
+,,Pokémon Legends: Z-A Celebration Event,Event/News
+,,Pokémon Legends: Z-A Celebration Event,Event/News
 ,,Deoxys (Attack & Speed Forme) in 5-star Raid Battles,Raid/Mega
 ,,Deoxys (Attack & Speed Forme) in 5-star Raid Battles,Raid/Mega
 ,,Deoxys (Attack & Speed Forme) in 5-star Raid Battles,Raid/Mega
 ,,Deoxys (Attack & Speed Forme) in 5-star Raid Battles,Raid/Mega
+,,Mega Mawile and Mega Salamence in Mega Raids,Raid/Mega
+,,Mega Mawile and Mega Salamence in Mega Raids,Raid/Mega
+,,Mega Mawile and Mega Salamence in Mega Raids,Raid/Mega
+,,Mega Mawile and Mega Salamence in Mega Raids,Raid/Mega
 ,,Master Premier and Great League Remix | Tales of Transformation,Event/News
 ,,Master Premier and Great League Remix | Tales of Transformation,Event/News
 ,,Master Premier and Great League Remix | Tales of Transformation,Event/News
@@ -207,10 +231,18 @@ Start Date,End Date,Event Name,Category (CD / CD Classic / Raid / Mega / Shadow 
 ,,GO Battle Weekend: Tales of Transformation,Event/News
 ,,GO Battle Weekend: Tales of Transformation,Event/News
 ,,GO Battle Weekend: Tales of Transformation,Event/News
+,,Halloween 2025 Part I,Event/News
+,,Halloween 2025 Part I,Event/News
+,,Halloween 2025 Part I,Event/News
+,,Halloween 2025 Part I,Event/News
 ,,Genesect (Douse & Shock Drive) in 5-star Raid Battles,Raid/Mega
 ,,Genesect (Douse & Shock Drive) in 5-star Raid Battles,Raid/Mega
 ,,Genesect (Douse & Shock Drive) in 5-star Raid Battles,Raid/Mega
 ,,Genesect (Douse & Shock Drive) in 5-star Raid Battles,Raid/Mega
+,,Mega Houndoom and Mega Absol in Mega Raids,Raid/Mega
+,,Mega Houndoom and Mega Absol in Mega Raids,Raid/Mega
+,,Mega Houndoom and Mega Absol in Mega Raids,Raid/Mega
+,,Mega Houndoom and Mega Absol in Mega Raids,Raid/Mega
 ,,"Great League, Ultra League, and Master League | Tales of Transformation",Event/News
 ,,"Great League, Ultra League, and Master League | Tales of Transformation",Event/News
 ,,"Great League, Ultra League, and Master League | Tales of Transformation",Event/News
@@ -227,10 +259,18 @@ Start Date,End Date,Event Name,Category (CD / CD Classic / Raid / Mega / Shadow 
 ,,Dynamax Woobat during Max Monday,Event/News
 ,,Dynamax Woobat during Max Monday,Event/News
 ,,Dynamax Woobat during Max Monday,Event/News
+,,Halloween 2025 Part II,Event/News
+,,Halloween 2025 Part II,Event/News
+,,Halloween 2025 Part II,Event/News
+,,Halloween 2025 Part II,Event/News
 ,,Giratina (Altered Forme) in 5-star Raid Battles,Raid/Mega
 ,,Giratina (Altered Forme) in 5-star Raid Battles,Raid/Mega
 ,,Giratina (Altered Forme) in 5-star Raid Battles,Raid/Mega
 ,,Giratina (Altered Forme) in 5-star Raid Battles,Raid/Mega
+,,"Mega Gengar, Mega Sableye, and Mega Banette in Mega Raids",Raid/Mega
+,,"Mega Gengar, Mega Sableye, and Mega Banette in Mega Raids",Raid/Mega
+,,"Mega Gengar, Mega Sableye, and Mega Banette in Mega Raids",Raid/Mega
+,,"Mega Gengar, Mega Sableye, and Mega Banette in Mega Raids",Raid/Mega
 ,,Great League and Halloween Cup: Great League Edition | Tales of Transformation,Event/News
 ,,Great League and Halloween Cup: Great League Edition | Tales of Transformation,Event/News
 ,,Great League and Halloween Cup: Great League Edition | Tales of Transformation,Event/News
@@ -332,6 +372,10 @@ Start Date,End Date,Event Name,Category (CD / CD Classic / Raid / Mega / Shadow 
 ,,Deoxys (Normal & Defense Forme) in 5-star Raid Battles,Raid/Mega
 ,,Deoxys (Normal & Defense Forme) in 5-star Raid Battles,Raid/Mega
 ,,Deoxys (Normal & Defense Forme) in 5-star Raid Battles,Raid/Mega
+,,"Mega Sceptile, Mega Blaziken, and Mega Swampert in Mega Raids",Raid/Mega
+,,"Mega Sceptile, Mega Blaziken, and Mega Swampert in Mega Raids",Raid/Mega
+,,"Mega Sceptile, Mega Blaziken, and Mega Swampert in Mega Raids",Raid/Mega
+,,"Mega Sceptile, Mega Blaziken, and Mega Swampert in Mega Raids",Raid/Mega
 ,,Ultra League and Jungle Cup: Great League Edition | Tales of Transformation,Event/News
 ,,Ultra League and Jungle Cup: Great League Edition | Tales of Transformation,Event/News
 ,,Ultra League and Jungle Cup: Great League Edition | Tales of Transformation,Event/News
@@ -360,6 +404,10 @@ Start Date,End Date,Event Name,Category (CD / CD Classic / Raid / Mega / Shadow 
 ,,Deoxys (Attack & Speed Forme) in 5-star Raid Battles,Raid/Mega
 ,,Deoxys (Attack & Speed Forme) in 5-star Raid Battles,Raid/Mega
 ,,Deoxys (Attack & Speed Forme) in 5-star Raid Battles,Raid/Mega
+,,Mega Mawile and Mega Salamence in Mega Raids,Raid/Mega
+,,Mega Mawile and Mega Salamence in Mega Raids,Raid/Mega
+,,Mega Mawile and Mega Salamence in Mega Raids,Raid/Mega
+,,Mega Mawile and Mega Salamence in Mega Raids,Raid/Mega
 ,,Master Premier and Great League Remix | Tales of Transformation,Event/News
 ,,Master Premier and Great League Remix | Tales of Transformation,Event/News
 ,,Master Premier and Great League Remix | Tales of Transformation,Event/News
@@ -372,14 +420,30 @@ Start Date,End Date,Event Name,Category (CD / CD Classic / Raid / Mega / Shadow 
 ,,Deoxys (Attack & Speed Forme) Raid Hour,Raid/Mega
 ,,Deoxys (Attack & Speed Forme) Raid Hour,Raid/Mega
 ,,Deoxys (Attack & Speed Forme) Raid Hour,Raid/Mega
+,,Pokémon Legends: Z-A Celebration Event,Event/News
+,,Pokémon Legends: Z-A Celebration Event,Event/News
+,,Pokémon Legends: Z-A Celebration Event,Event/News
+,,Pokémon Legends: Z-A Celebration Event,Event/News
+,,Mega Raid Day,Raid/Mega
+,,Mega Raid Day,Raid/Mega
+,,Mega Raid Day,Raid/Mega
+,,Mega Raid Day,Raid/Mega
 ,,Dynamax Gastly during Max Monday,Event/News
 ,,Dynamax Gastly during Max Monday,Event/News
 ,,Dynamax Gastly during Max Monday,Event/News
 ,,Dynamax Gastly during Max Monday,Event/News
+,,Halloween 2025 Part I,Event/News
+,,Halloween 2025 Part I,Event/News
+,,Halloween 2025 Part I,Event/News
+,,Halloween 2025 Part I,Event/News
 ,,Genesect (Douse & Shock Drive) in 5-star Raid Battles,Raid/Mega
 ,,Genesect (Douse & Shock Drive) in 5-star Raid Battles,Raid/Mega
 ,,Genesect (Douse & Shock Drive) in 5-star Raid Battles,Raid/Mega
 ,,Genesect (Douse & Shock Drive) in 5-star Raid Battles,Raid/Mega
+,,Mega Houndoom and Mega Absol in Mega Raids,Raid/Mega
+,,Mega Houndoom and Mega Absol in Mega Raids,Raid/Mega
+,,Mega Houndoom and Mega Absol in Mega Raids,Raid/Mega
+,,Mega Houndoom and Mega Absol in Mega Raids,Raid/Mega
 ,,"Great League, Ultra League, and Master League | Tales of Transformation",Event/News
 ,,"Great League, Ultra League, and Master League | Tales of Transformation",Event/News
 ,,"Great League, Ultra League, and Master League | Tales of Transformation",Event/News
@@ -396,6 +460,10 @@ Start Date,End Date,Event Name,Category (CD / CD Classic / Raid / Mega / Shadow 
 ,,GO Battle Weekend: Tales of Transformation,Event/News
 ,,GO Battle Weekend: Tales of Transformation,Event/News
 ,,GO Battle Weekend: Tales of Transformation,Event/News
+,,Halloween 2025 Part II,Event/News
+,,Halloween 2025 Part II,Event/News
+,,Halloween 2025 Part II,Event/News
+,,Halloween 2025 Part II,Event/News
 ,,Dynamax Woobat during Max Monday,Event/News
 ,,Dynamax Woobat during Max Monday,Event/News
 ,,Dynamax Woobat during Max Monday,Event/News
@@ -404,6 +472,10 @@ Start Date,End Date,Event Name,Category (CD / CD Classic / Raid / Mega / Shadow 
 ,,Giratina (Altered Forme) in 5-star Raid Battles,Raid/Mega
 ,,Giratina (Altered Forme) in 5-star Raid Battles,Raid/Mega
 ,,Giratina (Altered Forme) in 5-star Raid Battles,Raid/Mega
+,,"Mega Gengar, Mega Sableye, and Mega Banette in Mega Raids",Raid/Mega
+,,"Mega Gengar, Mega Sableye, and Mega Banette in Mega Raids",Raid/Mega
+,,"Mega Gengar, Mega Sableye, and Mega Banette in Mega Raids",Raid/Mega
+,,"Mega Gengar, Mega Sableye, and Mega Banette in Mega Raids",Raid/Mega
 ,,Great League and Halloween Cup: Great League Edition | Tales of Transformation,Event/News
 ,,Great League and Halloween Cup: Great League Edition | Tales of Transformation,Event/News
 ,,Great League and Halloween Cup: Great League Edition | Tales of Transformation,Event/News
