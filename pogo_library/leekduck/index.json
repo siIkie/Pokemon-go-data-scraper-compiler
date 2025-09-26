@@ -5,7 +5,7 @@
     "url": "https://leekduck.com/events/",
     "source": "leekduck",
     "file": "2024-06-01_events.html",
-    "sha256": "b76594836bab432f87fc8e26eb9cc6afa00fb89b170f15ca03a500181a83bffa"
+    "sha256": "2e36d6b9232a070730c11e77aa2488d450b9f70dc8180d7142d81a764a324c1a"
   },
   {
     "title": "Raid NOW",
@@ -13,7 +13,7 @@
     "url": "https://leekduck.com/raidnow/",
     "source": "leekduck",
     "file": "2024-06-01_raid-now.html",
-    "sha256": "ea1130ab5ab071c531698d9ab650d59e3a6b56514cd0754f7a5cf11a547a08c2"
+    "sha256": "b7432b6e7b12b6bde7ed87e20a64754b5bf601c7871838d90e051e56a3767c2c"
   },
   {
     "title": "Research",
@@ -21,7 +21,7 @@
     "url": "https://leekduck.com/research/",
     "source": "leekduck",
     "file": "2024-06-01_research.html",
-    "sha256": "9943ac7b235aa52f47b37931e8b06eac57fa3be43e5993b055ccdfe5c515c230"
+    "sha256": "3a64a443955ff984831b9b046326f6c8d25dec3953a9981a7c5abcb88ce3f295"
   },
   {
     "title": "Event Completely Normal Sat, Sep 27, at 8:00 PM Local Time Ends: Calculating...",
@@ -29,7 +29,7 @@
     "url": "https://leekduck.com/events/completely-normal-2025/",
     "source": "leekduck",
     "file": "2024-06-01_event-completely-normal-sat-sep-27-at-800-pm-local-time-ends-calculating.html",
-    "sha256": "f3964219b8a9289117790a7728936df7fbee7a6b923045ff4c3dafab27f0a3ff"
+    "sha256": "9cd081a0cfd67ec1b6ba29d94ed47ac137b4181b3fb97f6504f4b18b895fc967"
   },
   {
     "title": "City Safari Bangkok, Thailand - Pokémon GO City Safari Sun, Sep 28, at 6:00 PM Local Time Ends: Calculating...",
@@ -45,7 +45,7 @@
     "url": "https://leekduck.com/events/pokemon-go-city-safari-amsterdam-2025/",
     "source": "leekduck",
     "file": "2024-06-01_city-safari-amsterdam-netherlands---pokmon-go-city-safari-sun-sep-28-at-600-pm-local-time-ends-calculating.html",
-    "sha256": "cd67951d7d1540a0e7332fdba028406006dc86c985c1d0af234160cb4a62ab9a"
+    "sha256": "19869774786553307d3bd48f229cbe7e2b6a2b1f3619fbd14bec066477a1ea54"
   },
   {
     "title": "City Safari Valencia, Spain - Pokémon GO City Safari Sun, Sep 28, at 6:00 PM Local Time Ends: Calculating...",
@@ -53,7 +53,7 @@
     "url": "https://leekduck.com/events/pokemon-go-city-safari-valencia-2025/",
     "source": "leekduck",
     "file": "2024-06-01_city-safari-valencia-spain---pokmon-go-city-safari-sun-sep-28-at-600-pm-local-time-ends-calculating.html",
-    "sha256": "11b1570c8b251dde15c09ae7f2851e1fb4d1a9e6dfce8ac9c7d48ad0ee3d0d5e"
+    "sha256": "6c6a4dc77f167482739748a0e8f25f5b49666bd94b87eb5b3dc2d95c611861f5"
   },
   {
     "title": "City Safari Cancún, Mexico - Pokémon GO City Safari Sun, Sep 28, at 6:00 PM Local Time Ends: Calculating...",
@@ -61,7 +61,7 @@
     "url": "https://leekduck.com/events/pokemon-go-city-safari-cancun-2025/",
     "source": "leekduck",
     "file": "2024-06-01_city-safari-cancn-mexico---pokmon-go-city-safari-sun-sep-28-at-600-pm-local-time-ends-calculating.html",
-    "sha256": "e8f6f0e21db5ab1bdab6317096b210ee07be090ee693940478304a2dfb5a2d23"
+    "sha256": "e4d1296a9d3fff0e6c389d056ae7be1fd9d7c9398ac2a39780c61f391b06c7bd"
   },
   {
     "title": "City Safari Vancouver, Canada - Pokémon GO City Safari Sun, Sep 28, at 6:00 PM Local Time Ends: Calculating...",
@@ -69,7 +69,7 @@
     "url": "https://leekduck.com/events/pokemon-go-city-safari-vancouver-2025/",
     "source": "leekduck",
     "file": "2024-06-01_city-safari-vancouver-canada---pokmon-go-city-safari-sun-sep-28-at-600-pm-local-time-ends-calculating.html",
-    "sha256": "bacd656a8be0cbc4c853baacc50aa2cb6cb8e09fb102b5f1648760cf19b6cdcd"
+    "sha256": "68f1a31d90b200599344e19a3c68a85856b2f9bc81e9cbeebabf136e3fab9fa9"
   },
   {
     "title": "Raid Day Mega Camerupt Raid Day Sun, Sep 28, at 5:00 PM Local Time Ends: Calculating...",
@@ -77,7 +77,15 @@
     "url": "https://leekduck.com/events/mega-camerupt-raid-day-september-2025/",
     "source": "leekduck",
     "file": "2024-06-01_raid-day-mega-camerupt-raid-day-sun-sep-28-at-500-pm-local-time-ends-calculating.html",
-    "sha256": "ca72161abc876257557921bd11f723c32feb099c18030c02f2d41e1d9f733ad2"
+    "sha256": "2936f99b6926565a47b9d24ca4cfb059b317b78f07984509e2744b7308a9635b"
+  },
+  {
+    "title": "PokéStop Showcase Camerupt and Dudunsparce PokéStop Showcases Sun, Sep 28, at 8:00 PM Local Time Ends: Calculating...",
+    "date": "2024-06-01",
+    "url": "https://leekduck.com/events/camerupt-dudunsparce-showcase/",
+    "source": "leekduck",
+    "file": "2024-06-01_pokstop-showcase-camerupt-and-dudunsparce-pokstop-showcases-sun-sep-28-at-800-pm-local-time-ends-calculating.html",
+    "sha256": "c6fb5b7e2dfb225b9ce8de78b5b481d431c5a1ea9063789a5f98b123aa4699bc"
   },
   {
     "title": "Raid Battles Mega Kangaskhan and Mega Lopunny in Mega Raids Tue, Sep 30, at 10:00 AM Local Time Ends: Calculating...",
@@ -85,7 +93,7 @@
     "url": "https://leekduck.com/events/mega-kangaskhan-lopunny-in-mega-raids-september-2025/",
     "source": "leekduck",
     "file": "2024-06-01_raid-battles-mega-kangaskhan-and-mega-lopunny-in-mega-raids-tue-sep-30-at-1000-am-local-time-ends-calculating.html",
-    "sha256": "614f58deb02622738c5a58c4aeedca10081d0f2e8f4efc3af96e6e1b4ac78d91"
+    "sha256": "42b282369b60f38ef7822c747b64628ff46eac4d3a2c7790be531d235ed5c34f"
   },
   {
     "title": "GO Battle League Great League, Ultra League, and Master League | Tales of Transformation Calculating... Ends: Calculating...",
@@ -101,7 +109,7 @@
     "url": "https://leekduck.com/events/pokemonspotlighthour2025-09-30/",
     "source": "leekduck",
     "file": "2024-06-01_pokmon-spotlight-hour-aron-spotlight-hour-tue-sep-30-at-700-pm-local-time-ends-calculating.html",
-    "sha256": "ba2684790a2fcb0258556a790e9ef60bfdba6f7e6d3f198ad6f9f38a51fe098b"
+    "sha256": "b0495ad8dee6f451ed88da956a164c103a36336b83a4efb3d42f4b7dc2405caf"
   },
   {
     "title": "Raid Hour Dialga (Origin Forme) Raid Hour Wed, Oct 1, at 7:00 PM Local Time Ends: Calculating...",
@@ -109,7 +117,7 @@
     "url": "https://leekduck.com/events/raidhour20251001/",
     "source": "leekduck",
     "file": "2024-06-01_raid-hour-dialga-origin-forme-raid-hour-wed-oct-1-at-700-pm-local-time-ends-calculating.html",
-    "sha256": "10d069cf6fe6a5600d12978310771c0ecd6c023f7826ac41ec2646235134fbba"
+    "sha256": "33114826ecf56ffabd3098ea212c90f4bc58164f8182466cada3c4aa2141c263"
   },
   {
     "title": "Raid Day Mega Metagross Raid Day Sat, Oct 4, at 5:00 PM Local Time Ends: Calculating...",
@@ -117,7 +125,7 @@
     "url": "https://leekduck.com/events/mega-metagross-raid-day-october-2025/",
     "source": "leekduck",
     "file": "2024-06-01_raid-day-mega-metagross-raid-day-sat-oct-4-at-500-pm-local-time-ends-calculating.html",
-    "sha256": "9717084523f9e2ad3a446c94385e51c9a6b0abe39bf5ead695a878bc4e144011"
+    "sha256": "02da820df079ead3db90a29da20fbd77242b2990b540f349249f2f06bf85efb9"
   },
   {
     "title": "Max Mondays Dynamax Beldum during Max Monday Sun, Oct 5, at 7:00 PM Local Time Ends: Calculating...",
@@ -133,7 +141,7 @@
     "url": "https://leekduck.com/events/go-pass-september-2025/",
     "source": "leekduck",
     "file": "2024-06-01_go-pass-go-pass-september-tue-oct-7-at-1000-am-local-time-ends-calculating.html",
-    "sha256": "4b6a1e02c7b075e358210f2dcdb32ee56cb4426ee3c9cee3e0a0c068830c6581"
+    "sha256": "ff8c5d99272ddbd9dfa23fb81a82efcba1f1a897dcd087dcebea74c40fae3dbe"
   },
   {
     "title": "Raid Battles Dialga in 5-star Raid Battles Tue, Oct 7, at 10:00 AM Local Time Ends: Calculating...",
@@ -141,7 +149,7 @@
     "url": "https://leekduck.com/events/dialga-in-5-star-raid-battles-september-october-2025/",
     "source": "leekduck",
     "file": "2024-06-01_raid-battles-dialga-in-5-star-raid-battles-tue-oct-7-at-1000-am-local-time-ends-calculating.html",
-    "sha256": "2fe5a0a2a010dcc258c6ffd5a2740e09817554bca7c1948b6baca8587669565a"
+    "sha256": "61368967925fd3bbe50072219b76905f0c5d44b6c6495758a77c613c23434587"
   },
   {
     "title": "Raid Battles Mega Steelix, Scizor, and Lucario in Mega Raids Tue, Oct 7, at 10:00 AM Local Time Ends: Calculating...",
@@ -149,7 +157,7 @@
     "url": "https://leekduck.com/events/mega-steel-fighting-in-mega-raids-september-october-2025/",
     "source": "leekduck",
     "file": "2024-06-01_raid-battles-mega-steelix-scizor-and-lucario-in-mega-raids-tue-oct-7-at-1000-am-local-time-ends-calculating.html",
-    "sha256": "9808bf1168e98b0f4c98239fc977ef53b07911bc1704d3996241908322a0c20a"
+    "sha256": "dd08157cdb46f52499c2a9e14587a3a15a5839e4b469f19287c911f0f415b5ce"
   },
   {
     "title": "GO Battle League Great League and Fantasy Cup: Great League Edition | Tales of Transformation Calculating... Ends: Calculating...",
@@ -157,7 +165,7 @@
     "url": "https://leekduck.com/events/gbl-tales-of-transformation_great-league_fantasy-cup-great-league-edition/",
     "source": "leekduck",
     "file": "2024-06-01_go-battle-league-great-league-and-fantasy-cup-great-league-edition--tales-of-transformation-calculating-ends-calculating.html",
-    "sha256": "fec38f99d931bcfc2a8b2086840eb8f1782447788e880f8daae67de63ff85368"
+    "sha256": "7a3fb7d1361a9ea008efc400a6f29b5ec1eac210f1c9910e3188e2c7c4aa7f29"
   },
   {
     "title": "Pokémon Spotlight Hour Ferroseed Spotlight Hour Tue, Oct 7, at 7:00 PM Local Time Ends: Calculating...",
@@ -165,7 +173,7 @@
     "url": "https://leekduck.com/events/pokemonspotlighthour2025-10-07/",
     "source": "leekduck",
     "file": "2024-06-01_pokmon-spotlight-hour-ferroseed-spotlight-hour-tue-oct-7-at-700-pm-local-time-ends-calculating.html",
-    "sha256": "b1a362ef04ebffc65c28b6b102144fdf25ef6e30cbe46dd2da9e1bd8faf3fdbb"
+    "sha256": "012d3e86466555c6e50fb9c34eb8e1900655717054f152850c43dd7bf69002da"
   },
   {
     "title": "Event Steel Skyline Tue, Oct 7, at 8:00 PM Local Time Ends: Calculating...",
@@ -173,7 +181,7 @@
     "url": "https://leekduck.com/events/steel-skyline-2025/",
     "source": "leekduck",
     "file": "2024-06-01_event-steel-skyline-tue-oct-7-at-800-pm-local-time-ends-calculating.html",
-    "sha256": "c624e5a6d42644138a241213eb826ed2094092a04ab0db5d931b3270087b3484"
+    "sha256": "3bd595f58ca5b9029409d03ef84a9207a7d92a51f59cf9e8bb28438f8a77ea6f"
   },
   {
     "title": "Raid Hour Deoxys (Normal & Defense Forme) Raid Hour Wed, Oct 8, at 7:00 PM Local Time Ends: Calculating...",
@@ -181,7 +189,7 @@
     "url": "https://leekduck.com/events/raidhour20251008/",
     "source": "leekduck",
     "file": "2024-06-01_raid-hour-deoxys-normal--defense-forme-raid-hour-wed-oct-8-at-700-pm-local-time-ends-calculating.html",
-    "sha256": "0166ae6d29d6a3cf4adba0171b6edc7e758ba755bc155bec78a8ca4fb971e56b"
+    "sha256": "1e8e2e87ec86f375cc258b1d42cfab4884b2816d9e77d4cc57b7984fd6850a61"
   },
   {
     "title": "Community Day Solosis Community Day Sun, Oct 12, at 5:00 PM Local Time Ends: Calculating...",
@@ -189,7 +197,7 @@
     "url": "https://leekduck.com/events/october-communityday2025/",
     "source": "leekduck",
     "file": "2024-06-01_community-day-solosis-community-day-sun-oct-12-at-500-pm-local-time-ends-calculating.html",
-    "sha256": "c881c1c38dedf82fd3b6ec625ddc8f0af7cc4cca291fcaa9692278a961cd8f70"
+    "sha256": "b3561c5b904d36df1603b8aa600f056b1b139c20a17b696f5e0bbea73ca930df"
   },
   {
     "title": "Max Mondays Dynamax Drilbur during Max Monday Sun, Oct 12, at 7:00 PM Local Time Ends: Calculating...",
@@ -197,7 +205,7 @@
     "url": "https://leekduck.com/events/max-mondays-2025-10-06/",
     "source": "leekduck",
     "file": "2024-06-01_max-mondays-dynamax-drilbur-during-max-monday-sun-oct-12-at-700-pm-local-time-ends-calculating.html",
-    "sha256": "5e55a2c783ebab388bb14fde9a176a3a6a5eaa6a64f64e84fde93344c7f98d22"
+    "sha256": "63748e20842c5ddd45540139c256805364c697b4da3fc076d3303dbf220714de"
   },
   {
     "title": "Raid Battles Deoxys (Normal & Defense Forme) in 5-star Raid Battles Tue, Oct 14, at 10:00 AM Local Time Ends: Calculating...",
@@ -205,7 +213,7 @@
     "url": "https://leekduck.com/events/deoxys-normal-defense-in-5-star-raid-battles-october-2025/",
     "source": "leekduck",
     "file": "2024-06-01_raid-battles-deoxys-normal--defense-forme-in-5-star-raid-battles-tue-oct-14-at-1000-am-local-time-ends-calculating.html",
-    "sha256": "8fea9a4eb09562411410a579a1c07176b5ad8f3f0f590b49eb2ac50fcb1d97ce"
+    "sha256": "c8bf00e15262a996de3069448c0dd180f579370d933e019758eed3252093845e"
   },
   {
     "title": "Raid Battles Mega Sceptile, Mega Blaziken, and Mega Swampert in Mega Raids Tue, Oct 14, at 10:00 AM Local Time Ends: Calculating...",
@@ -213,7 +221,7 @@
     "url": "https://leekduck.com/events/mega-sceptile-mega-blaziken-mega-swampert-in-mega-raids-october-2025/",
     "source": "leekduck",
     "file": "2024-06-01_raid-battles-mega-sceptile-mega-blaziken-and-mega-swampert-in-mega-raids-tue-oct-14-at-1000-am-local-time-ends-calculati.html",
-    "sha256": "60cc78c2f12625301cb18b9aa8dd5c0a63561231dab84ee0a10d4b2ae7e6238e"
+    "sha256": "553fd3382a09d60cf9effb958ceac2dfc6088527663ff8b8863573c03ba55cf6"
   },
   {
     "title": "GO Battle League Ultra League and Jungle Cup: Great League Edition | Tales of Transformation Calculating... Ends: Calculating...",
@@ -229,7 +237,7 @@
     "url": "https://leekduck.com/events/pokemonspotlighthour2025-10-14/",
     "source": "leekduck",
     "file": "2024-06-01_pokmon-spotlight-hour-petilil-spotlight-hour-tue-oct-14-at-700-pm-local-time-ends-calculating.html",
-    "sha256": "85776d80cd3156a625843ea08308ec9b6923c187d0ebf9b899644e94a8168914"
+    "sha256": "cc0d794fe2d87e102d3169a55a9644f6a13e170c83e6b1c0f6e234886334e295"
   },
   {
     "title": "Event XP Celebration Tue, Oct 14, at 11:59 PM Local Time Ends: Calculating...",
@@ -237,7 +245,7 @@
     "url": "https://leekduck.com/events/xp-celebration-event-2025/",
     "source": "leekduck",
     "file": "2024-06-01_event-xp-celebration-tue-oct-14-at-1159-pm-local-time-ends-calculating.html",
-    "sha256": "f454ee4f3948550b62f476eebcfdc115545fc709e9326b3187c1d00d3e04dcf6"
+    "sha256": "235d099220ac1368dc481716084be48e04b0e25de84a584900a56159cde8544e"
   },
   {
     "title": "Raid Hour Deoxys (Attack & Speed Forme) Raid Hour Wed, Oct 15, at 7:00 PM Local Time Ends: Calculating...",
@@ -245,7 +253,7 @@
     "url": "https://leekduck.com/events/raidhour20251015/",
     "source": "leekduck",
     "file": "2024-06-01_raid-hour-deoxys-attack--speed-forme-raid-hour-wed-oct-15-at-700-pm-local-time-ends-calculating.html",
-    "sha256": "a6c4d305317e9596197cb2b7ade19f923e62a96b6de4ad3a8887ec67bffcb252"
+    "sha256": "884847035b4512c6c44bb46b48a9744214d1fc2883d16a94eebaa68effba1bfd"
   },
   {
     "title": "Event Harvest Festival Thu, Oct 16, at 8:00 PM Local Time Ends: Calculating...",
@@ -253,7 +261,7 @@
     "url": "https://leekduck.com/events/harvest-festival-2025/",
     "source": "leekduck",
     "file": "2024-06-01_event-harvest-festival-thu-oct-16-at-800-pm-local-time-ends-calculating.html",
-    "sha256": "fe0f5e4880edb64d0b6c32e44dd99ab5b22779bd3b444a9997c169a55aa9ad4d"
+    "sha256": "9d1bf715132f429b2efcc6f5b84d48db38562c13006a7cae7866b768b955bb6e"
   },
   {
     "title": "Raid Day Mega Rayquaza Raid Day Sat, Oct 18, at 5:00 PM Local Time Ends: Calculating...",
@@ -261,7 +269,7 @@
     "url": "https://leekduck.com/events/mega-rayquaza-raid-day-november-2025/",
     "source": "leekduck",
     "file": "2024-06-01_raid-day-mega-rayquaza-raid-day-sat-oct-18-at-500-pm-local-time-ends-calculating.html",
-    "sha256": "83a09d92bb0db6ed7be2f8888aa72123ae3171074c46664fca9ec3d7e45c9dc9"
+    "sha256": "92343d8a3f09384d303b8c222bc638d1c9690372fb535fa5a24e4179680601d9"
   },
   {
     "title": "Max Mondays Dynamax Bounsweet during Max Monday Sun, Oct 19, at 7:00 PM Local Time Ends: Calculating...",
@@ -269,7 +277,7 @@
     "url": "https://leekduck.com/events/max-mondays-2025-10-13/",
     "source": "leekduck",
     "file": "2024-06-01_max-mondays-dynamax-bounsweet-during-max-monday-sun-oct-19-at-700-pm-local-time-ends-calculating.html",
-    "sha256": "d13b2d6fcf07bd37e33a3fcef3f42b6e8ea9e340b8d7fb28a671cb7a28582963"
+    "sha256": "8af07429b3f796bba1e45a427b5a009aad77d42225b83cb5c80c20376aafd97d"
   },
   {
     "title": "Event Pokémon Legends: Z-A Celebration Event Mon, Oct 20, at 8:00 PM Local Time Ends: Calculating...",
@@ -277,7 +285,7 @@
     "url": "https://leekduck.com/events/pokemon-legends-za-celebration-event-2025/",
     "source": "leekduck",
     "file": "2024-06-01_event-pokmon-legends-z-a-celebration-event-mon-oct-20-at-800-pm-local-time-ends-calculating.html",
-    "sha256": "80ca28b85bba81910ab5dddb51fc09014389564a73e5d0c1f32e83c6e709315c"
+    "sha256": "890fbe0facbcee61c2977e77050e2ca6f8b34e8249e133c816777e0edd1fe270"
   },
   {
     "title": "Raid Battles Deoxys (Attack & Speed Forme) in 5-star Raid Battles Tue, Oct 21, at 10:00 AM Local Time Ends: Calculating...",
@@ -285,7 +293,7 @@
     "url": "https://leekduck.com/events/deoxys-attack-speed-in-5-star-raid-battles-october-2025/",
     "source": "leekduck",
     "file": "2024-06-01_raid-battles-deoxys-attack--speed-forme-in-5-star-raid-battles-tue-oct-21-at-1000-am-local-time-ends-calculating.html",
-    "sha256": "c98b5773efe7c9743fce412d63ea2d747350c04b9491ba7d387db649965f4a53"
+    "sha256": "fa8ee39117f94fabddc059935584ed097dfb79232b1c3eb7d754960602ae4ee3"
   },
   {
     "title": "Raid Battles Mega Mawile and Mega Salamence in Mega Raids Tue, Oct 21, at 10:00 AM Local Time Ends: Calculating...",
@@ -293,7 +301,7 @@
     "url": "https://leekduck.com/events/mega-mawile-mega-salamence-in-mega-raids-october-2025/",
     "source": "leekduck",
     "file": "2024-06-01_raid-battles-mega-mawile-and-mega-salamence-in-mega-raids-tue-oct-21-at-1000-am-local-time-ends-calculating.html",
-    "sha256": "b586b88a682ed7c6c4d269fc716d21c08efe8842c99cabba990ddc6f4d7f9b99"
+    "sha256": "28526db829477cad18d6f54a90492a7f37449babba779a224823ed507a9557a4"
   },
   {
     "title": "GO Battle League Master Premier and Great League Remix | Tales of Transformation Calculating... Ends: Calculating...",
@@ -301,7 +309,7 @@
     "url": "https://leekduck.com/events/gbl-tales-of-transformation_master-premier_great-league-remix/",
     "source": "leekduck",
     "file": "2024-06-01_go-battle-league-master-premier-and-great-league-remix--tales-of-transformation-calculating-ends-calculating.html",
-    "sha256": "88492be9313355e9017618983970596cd422c1d587e699f0275fe4ff1f82e5c6"
+    "sha256": "b5c43890a8f85cfc4d49987b0495e91efcf4655bd7e21495e1c0fabf5d59655d"
   },
   {
     "title": "Pokémon Spotlight Hour Gastly Spotlight Hour Tue, Oct 21, at 7:00 PM Local Time Ends: Calculating...",
@@ -309,7 +317,7 @@
     "url": "https://leekduck.com/events/pokemonspotlighthour2025-10-21/",
     "source": "leekduck",
     "file": "2024-06-01_pokmon-spotlight-hour-gastly-spotlight-hour-tue-oct-21-at-700-pm-local-time-ends-calculating.html",
-    "sha256": "970779768e3abb6dd836b6c66e9573f9a0a7cf50157645d37741039c8671f975"
+    "sha256": "1eb42c2028a6e2473edcc8db540210a1311be97aef6ec00a36d2be3b1b5714a2"
   },
   {
     "title": "Raid Hour Genesect Raid Hour Wed, Oct 22, at 7:00 PM Local Time Ends: Calculating...",
@@ -317,7 +325,7 @@
     "url": "https://leekduck.com/events/raidhour20251022/",
     "source": "leekduck",
     "file": "2024-06-01_raid-hour-genesect-raid-hour-wed-oct-22-at-700-pm-local-time-ends-calculating.html",
-    "sha256": "413bcd8e26b087bf23d1fe81ef9c7b41da37906aac1c3c18214601a6941ae295"
+    "sha256": "7226b0e0bb94ca148b8171e2b705d4017bb5479922af1f083c206393b1a5618a"
   },
   {
     "title": "Max Mondays Dynamax Gastly during Max Monday Sun, Oct 26, at 7:00 PM Local Time Ends: Calculating...",
@@ -325,7 +333,7 @@
     "url": "https://leekduck.com/events/max-mondays-2025-10-20/",
     "source": "leekduck",
     "file": "2024-06-01_max-mondays-dynamax-gastly-during-max-monday-sun-oct-26-at-700-pm-local-time-ends-calculating.html",
-    "sha256": "e62b4d79ecf69674b19835972a050a50d3c55d87711234a6e302ed1ba0830451"
+    "sha256": "71451030c40fa68aa99e359888500f01f761269234925d585131107c9ef7022b"
   },
   {
     "title": "Event GO Battle Weekend: Tales of Transformation Sun, Oct 26, at 11:59 PM Local Time Ends: Calculating...",
@@ -341,7 +349,7 @@
     "url": "https://leekduck.com/events/halloween-2025-part-i/",
     "source": "leekduck",
     "file": "2024-06-01_event-halloween-2025-part-i-mon-oct-27-at-800-pm-local-time-ends-calculating.html",
-    "sha256": "975f76094a174174a6489dc5eac01ecbe7e2b3499e5eca380e860d1a591a89d0"
+    "sha256": "f6fded9a7f07b157f345f8a7bf278390bb4383cac0dcf47989d78f2d001ba940"
   },
   {
     "title": "Raid Battles Genesect (Douse & Shock Drive) in 5-star Raid Battles Tue, Oct 28, at 10:00 AM Local Time Ends: Calculating...",
@@ -349,7 +357,7 @@
     "url": "https://leekduck.com/events/genesect-douse-shock-in-5-star-raid-battles-october-2025/",
     "source": "leekduck",
     "file": "2024-06-01_raid-battles-genesect-douse--shock-drive-in-5-star-raid-battles-tue-oct-28-at-1000-am-local-time-ends-calculating.html",
-    "sha256": "10acf031983e00c456cb9b9c709972fc9b415511d9bd309c876c68c99fb7f031"
+    "sha256": "e025adf1649821022fa82e2b56fe31429f0ad78ec497b49ab04de01f063e03e9"
   },
   {
     "title": "Raid Battles Mega Houndoom and Mega Absol in Mega Raids Tue, Oct 28, at 10:00 AM Local Time Ends: Calculating...",
@@ -357,7 +365,7 @@
     "url": "https://leekduck.com/events/mega-houndoom-mega-absol-in-mega-raids-october-2025/",
     "source": "leekduck",
     "file": "2024-06-01_raid-battles-mega-houndoom-and-mega-absol-in-mega-raids-tue-oct-28-at-1000-am-local-time-ends-calculating.html",
-    "sha256": "ea67634dad7da62b02c8de3f633020af872cb95585e9223bb1dc1e65d78a9dad"
+    "sha256": "c057300f9b184f62d71b4125dc4abd65dd261c6ccc9b71c582d6f81b480e16a0"
   },
   {
     "title": "GO Battle League Great League, Ultra League, and Master League | Tales of Transformation Calculating... Ends: Calculating...",
@@ -365,7 +373,7 @@
     "url": "https://leekduck.com/events/gbl-tales-of-transformation_great-league_ultra-league_master-league-split-2/",
     "source": "leekduck",
     "file": "2024-06-01_go-battle-league-great-league-ultra-league-and-master-league--tales-of-transformation-calculating-ends-calculating.html",
-    "sha256": "a968e1715049be650e1e9db912d3482274efe730dd004c7540ffea08236ae11a"
+    "sha256": "34fbc5aae7b64dedb6f7b884225e6fd11866a93b3350f98d1678a2ad1eb15676"
   },
   {
     "title": "Pokémon Spotlight Hour Sinistea Spotlight Hour Tue, Oct 28, at 7:00 PM Local Time Ends: Calculating...",
@@ -373,7 +381,7 @@
     "url": "https://leekduck.com/events/pokemonspotlighthour2025-10-28/",
     "source": "leekduck",
     "file": "2024-06-01_pokmon-spotlight-hour-sinistea-spotlight-hour-tue-oct-28-at-700-pm-local-time-ends-calculating.html",
-    "sha256": "b8678660d2fe61b7647cc1ec1c5e7cc3e730818d9c9ec0aa27637631611becab"
+    "sha256": "aedc77949d731613bf1fd29ba31f90771a57302ee7b3bb285d16329e06a4fa90"
   },
   {
     "title": "Raid Hour Giratina (Origin Forme) Raid Hour Wed, Oct 29, at 7:00 PM Local Time Ends: Calculating...",
@@ -381,7 +389,7 @@
     "url": "https://leekduck.com/events/raidhour20251029/",
     "source": "leekduck",
     "file": "2024-06-01_raid-hour-giratina-origin-forme-raid-hour-wed-oct-29-at-700-pm-local-time-ends-calculating.html",
-    "sha256": "2c6ad869e9f724ca8323e4fb2d3fe2eb5dd82d8c3c9255855a8a76cbf0ce72a7"
+    "sha256": "7af21d691f93d3ff625f7a5adef6a61e8e39bc776459f467e9346e94ceeea387"
   },
   {
     "title": "Max Mondays Dynamax Woobat during Max Monday Sun, Nov 2, at 7:00 PM Local Time Ends: Calculating...",
@@ -389,7 +397,7 @@
     "url": "https://leekduck.com/events/max-mondays-2025-10-27/",
     "source": "leekduck",
     "file": "2024-06-01_max-mondays-dynamax-woobat-during-max-monday-sun-nov-2-at-700-pm-local-time-ends-calculating.html",
-    "sha256": "68424c33fe9b15a6260ceb65ebe46a9564218d96c131f225f5517bbda982636b"
+    "sha256": "04358240d9937ee5bd93baa5689e7a63deaf96aad33e141eaa1e5e94cf6d8c7d"
   },
   {
     "title": "Event Halloween 2025 Part II Sun, Nov 2, at 8:00 PM Local Time Ends: Calculating...",
@@ -397,7 +405,7 @@
     "url": "https://leekduck.com/events/halloween-2025-part-ii/",
     "source": "leekduck",
     "file": "2024-06-01_event-halloween-2025-part-ii-sun-nov-2-at-800-pm-local-time-ends-calculating.html",
-    "sha256": "c8a3ae656c4194eed5b1e053213229a2e102159e0e9090aec4dec47f166518c7"
+    "sha256": "27b4742c8cd29d7105a1844381042474e4234fdd5c3e0b1a7302dc37c99b1849"
   },
   {
     "title": "Raid Battles Giratina (Altered Forme) in 5-star Raid Battles Tue, Nov 4, at 10:00 AM Local Time Ends: Calculating...",
@@ -405,7 +413,7 @@
     "url": "https://leekduck.com/events/giratina-altered-in-5-star-raid-battles-october-2025/",
     "source": "leekduck",
     "file": "2024-06-01_raid-battles-giratina-altered-forme-in-5-star-raid-battles-tue-nov-4-at-1000-am-local-time-ends-calculating.html",
-    "sha256": "2bdc6379c86dd682e9f42a881cae70578086e3c1ee31c338d6d83853d3d4b5f0"
+    "sha256": "b03095e7c95ed976e05473e8bd81cad1e0c23b2c6d3c8371d93968f82d3a3837"
   },
   {
     "title": "Raid Battles Mega Gengar, Mega Sableye, and Mega Banette in Mega Raids Tue, Nov 4, at 10:00 AM Local Time Ends: Calculating...",
@@ -413,7 +421,7 @@
     "url": "https://leekduck.com/events/mega-gengar-mega-sableye-mega-banette-in-mega-raids-october-2025/",
     "source": "leekduck",
     "file": "2024-06-01_raid-battles-mega-gengar-mega-sableye-and-mega-banette-in-mega-raids-tue-nov-4-at-1000-am-local-time-ends-calculating.html",
-    "sha256": "2736f4173ab75f2ec703396e51690929f72e17d223694da544dbcee5bce27863"
+    "sha256": "6e0dd0e666be329cd5399e26c6e634c7d132ac216e62197f6f1d4a6644fed572"
   },
   {
     "title": "GO Battle League Great League and Halloween Cup: Great League Edition | Tales of Transformation Calculating... Ends: Calculating...",
@@ -429,7 +437,7 @@
     "url": "https://leekduck.com/events/pokemon-go-wild-area-2025-nagasaki-japan/",
     "source": "leekduck",
     "file": "2024-06-01_wild-area-pokmon-go-wild-area-nagasaki-calculating-ends-calculating.html",
-    "sha256": "61982dff05491f4ef4df8a3d936efcd6a08a3ed9b282e38ea05cfa2b9233b718"
+    "sha256": "60a6f93c8457061ffa9d0e1df14efd88323c9c444a8f7a383e6bbce595c6bc44"
   },
   {
     "title": "GO Battle League Ultra League and Jungle Cup: Great League Edition | Tales of Transformation Calculating... Ends: Calculating...",
@@ -437,7 +445,7 @@
     "url": "https://leekduck.com/events/gbl-tales-of-transformation_ultra-league_jungle-cup-great-league-edition-2/",
     "source": "leekduck",
     "file": "2024-06-01_go-battle-league-ultra-league-and-jungle-cup-great-league-edition--tales-of-transformation-calculating-ends-calculating.html",
-    "sha256": "558814ff7dd779115beb7a9298e54cce2367c8b79e9fa15d52322dc38849f3f5"
+    "sha256": "3ba2a45154d6092d2e553aa484253142940acbf891dfc260985824a79ed3b097"
   },
   {
     "title": "Wild Area Pokémon GO Wild Area: Global Sun, Nov 16, at 6:00 PM Local Time Ends: Calculating...",
@@ -445,7 +453,7 @@
     "url": "https://leekduck.com/events/pokemon-go-wild-area-2025-global/",
     "source": "leekduck",
     "file": "2024-06-01_wild-area-pokmon-go-wild-area-global-sun-nov-16-at-600-pm-local-time-ends-calculating.html",
-    "sha256": "8ced8e2bd31280137b5c7298e4f28df373caf95ba3b58d72ac53d5b89ce7455d"
+    "sha256": "5065eb24a37dba04948077d5510bbb9b708993dfe7bdd4d3ebc60a11bd58d92f"
   },
   {
     "title": "GO Battle League Great League, Ultra League, and Master League | Tales of Transformation Calculating... Ends: Calculating...",
@@ -453,7 +461,7 @@
     "url": "https://leekduck.com/events/gbl-tales-of-transformation_great-league_ultra-league_master-league-split-3/",
     "source": "leekduck",
     "file": "2024-06-01_go-battle-league-great-league-ultra-league-and-master-league--tales-of-transformation-calculating-ends-calculating.html",
-    "sha256": "14c41e3fb189996c2c20c64b040e3393a8bf0a1fe3b4c204d3ced8b186878b09"
+    "sha256": "01df0ea094b781770c2a425f9e7da89a46f75838d309a4c8938054472b66ee2f"
   },
   {
     "title": "GO Battle League 2025 Championship Series Cup and Master League: Mega Edition | Tales of Transformation Calculating... Ends: Calculating...",
@@ -461,7 +469,7 @@
     "url": "https://leekduck.com/events/gbl-tales-of-transformation_2025-championship-series-cup_master-league-mega-edition/",
     "source": "leekduck",
     "file": "2024-06-01_go-battle-league-2025-championship-series-cup-and-master-league-mega-edition--tales-of-transformation-calculating-ends-c.html",
-    "sha256": "a06eed8a26c45d0e29ef32bffd4041bab760b83018f1587fc3aed424cd33be19"
+    "sha256": "2967c8d2f35dce81d63575875ae9c6a2417db5aa27919f37ff90d168eb3f516b"
   },
   {
     "title": "Community Day November Community Day Sun, Nov 30, at 5:00 PM Local Time Ends: Calculating...",
@@ -469,7 +477,7 @@
     "url": "https://leekduck.com/events/november-communityday2025/",
     "source": "leekduck",
     "file": "2024-06-01_community-day-november-community-day-sun-nov-30-at-500-pm-local-time-ends-calculating.html",
-    "sha256": "1d731735f993465e80650b6f2ca77d4326e52de217b2ed20a2c60af51e9bdb7e"
+    "sha256": "afba7e6141c326fafd739b815ecf8e068901ac51d7c43975849dcbd97870ccf4"
   },
   {
     "title": "Event Trade Days | Tales of Transformation Sun, Nov 30, at 11:59 PM Local Time Ends: Calculating...",
@@ -477,7 +485,7 @@
     "url": "https://leekduck.com/events/trade-days-tales-of-transformation/",
     "source": "leekduck",
     "file": "2024-06-01_event-trade-days--tales-of-transformation-sun-nov-30-at-1159-pm-local-time-ends-calculating.html",
-    "sha256": "697228300ff1a02adb527332883aabbcf0b977d348f2fa5eb8f8debe56e9371c"
+    "sha256": "90621b4c52b790f85b786ad3f552011ec4246099db765604a93dabe4b4d7b710"
   },
   {
     "title": "Season Tales of Transformation Tue, Dec 2, at 10:00 AM Local Time Ends: Calculating...",
@@ -485,7 +493,7 @@
     "url": "https://leekduck.com/events/season-20-tales-of-transformation/",
     "source": "leekduck",
     "file": "2024-06-01_season-tales-of-transformation-tue-dec-2-at-1000-am-local-time-ends-calculating.html",
-    "sha256": "52a1ff0db396a4623cc9d2f3dd2911292623caaee5efa04918aa5136303772fd"
+    "sha256": "ac1657025e54cef09ee8c12e50dffc0ee7907146a2ca98270e5d0d9a2c1513db"
   },
   {
     "title": "GO Battle League Catch Cup: Tales of Transformation: Great Edition, Ultra League, and Master League | Tales of Transformation Calculating... Ends: Calculating...",
@@ -493,6 +501,6 @@
     "url": "https://leekduck.com/events/gbl-tales-of-transformation_catch-cup-tales-of-transformation-great-edition_ultra-league_master-league/",
     "source": "leekduck",
     "file": "2024-06-01_go-battle-league-catch-cup-tales-of-transformation-great-edition-ultra-league-and-master-league--tales-of-transformation.html",
-    "sha256": "b4d0d7ded1c907e0ae74b0a3bfe5ca188af0ffb2b65c0e598d676ae08bb767f1"
+    "sha256": "06ab22ffd3f4ef2c2d37fa89eb372f66c41e693fb2544a76da12915009a95a85"
   }
 ]
