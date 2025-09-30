@@ -1,4 +1,4 @@
 # Latest POGO Digest
-- Built on: 2025-09-29
-- Range: 2024-06-01 → 2025-09-29
+- Built on: 2025-09-30
+- Range: 2024-06-01 → 2025-09-30
 - Files: POGO_Digest.xlsx, POGO_Digest.csv, POGO_Digest.json, POGO_Events.ics
